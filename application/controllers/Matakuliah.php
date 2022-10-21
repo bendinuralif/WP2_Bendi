@@ -6,12 +6,6 @@
     }
     public function cetak()
     {
-        $data = [
-            'kode' => $this->input->post('kode'),
-            'nama' => $this->input->post('nama'),
-            'sks' => $this->input->post('sks')
-        ];
-        $this->load->view('view-data-matakuliah', $data);
         $this->form_validation->set_rules(
             'kode',
             'Kode Matakuliah',
@@ -34,6 +28,7 @@
                 'kode' => $this->input->post('kode'),
                 'nama' => $this->input->post('nama'),
                 'sks' => $this->input->post('sks')
+                
             ];
             $this->load->view('view-data-matakuliah', $data);
         }
