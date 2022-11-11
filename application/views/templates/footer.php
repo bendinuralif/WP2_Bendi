@@ -56,7 +56,6 @@ base_url('autentifikasi/logout'); ?>">Logout</a>
 		$("#table-datatable").dataTable();
 	});
 	$('.alert-message').alert().delay(3500).slideUp('slow');
-
 </script>
 </body>
 
