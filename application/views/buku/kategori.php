@@ -27,8 +27,8 @@
 						<th scope="row"><?= $a++; ?></th>
 						<td><?= $k['kategori']; ?></td>
 						<td>
-							<a href="<?=base_url('buku/ubahBuku/').$k['id'];?>" class="badge badge-info"><i class="fas fa-edit"></i> Ubah</a>
-							<a href="<?=base_url('buku/hapusbuku/').$k['id'];?>" onclick="returnconfirm('Kamu yakin akan menghapus <?= $judul.' '.$k['kategori'];?>?');" class="badge badge-danger"><i class="fas fa-trash"></i>Hapus</a>
+							<a href="<?=base_url('buku/ubah_kategori/').$k['id'];?>" class="badge badge-info"><i class="fas fa-edit"></i> Ubah</a>
+							<a href="<?=base_url('hapusKategori').$k['id'];?>" onclick="returnconfirm('Kamu yakin akan menghapus <?= $judul.' '.$k['kategori'];?>?');" class="badge badge-danger"><i class="fas fa-trash"></i>Hapus</a>
 						</td>
 					</tr>
 					<?php } ?>
